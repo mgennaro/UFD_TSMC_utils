@@ -1,7 +1,7 @@
 import numpy as np
 from sklearn.neighbors import KDTree
 
-def get_completeness(mags,AStree,dfAS,photbands,radius=0.02):
+def get_completeness(mags,AStree,dfAS,radius=0.02):
     '''query radius for AS arount input magnitude and then see how many
     are detected'''
 
