@@ -71,7 +71,7 @@ def drawmagpairs(pbs,cat,starnum,magsin,magsou,logpst,loglik,logpri,cmpval,savep
     ax3.locator_params(tight=True, nbins=5)
     ax3.set_title('Log likelihood',fontsize=15)
     
-    ax4.scatter(magsin[:,0]-magsin[:,1],magsin[:,1],c=cmpval,cmap='RdYlBu_r',s=20,lw=0)
+    ax4.scatter(magsin[:,0]-magsin[:,1],magsin[:,1],c=cmpval,cmap='RdYlBu_r',s=20,lw=0,vmin=0,vmax=1)
     ax4.scatter(smg[0]-smg[1],smg[1],marker='*',c='yellow',s=85)
     #ax4.set_ylim(smg[1]+err,smg[1]-err)
     #ax4.set_xlim(smg[0]-smg[1]-err,smg[0]-smg[1]+err)
@@ -97,7 +97,7 @@ def drawmagpairs(pbs,cat,starnum,magsin,magsou,logpst,loglik,logpri,cmpval,savep
     #ax7.set_xlim(smg[0]-smg[1]-err,smg[0]-smg[1]+err)
     ax7.locator_params(tight=True, nbins=5)
     
-    ax8.scatter(magsou[:,0]-magsou[:,1],magsou[:,1],c=cmpval,cmap='RdYlBu_r',s=20,lw=0)
+    ax8.scatter(magsou[:,0]-magsou[:,1],magsou[:,1],c=cmpval,cmap='RdYlBu_r',s=20,lw=0,vmin=0,vmax=1)
     ax8.scatter(smg[0]-smg[1],smg[1],marker='*',c='yellow',s=85)
     #ax8.set_ylim(smg[1]+err,smg[1]-err)
     #ax8.set_xlim(smg[0]-smg[1]-err,smg[0]-smg[1]+err)
